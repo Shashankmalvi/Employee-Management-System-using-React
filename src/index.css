@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Global Reset ---------- */
+* {
+  color: #fff;
+  box-sizing: border-box;
+}
+
+/* ---------- Root & Body (CRITICAL) ---------- */
+html,
+body,
+#root {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* DO NOT use min-height: 100vh here */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* 🔥 locks body scroll */
+
+  background: radial-gradient(
+      circle at top left,
+      rgba(99, 102, 241, 0.15),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(56, 189, 248, 0.15),
+      transparent 40%
+    ),
+    linear-gradient(
+      135deg,
+      #020617,
+      #020617,
+      #020617
+    );
+
+  color: #e5e7eb;
+}
+
+/* ---------- Scrollbar Hiding ---------- */
+#tasklist::-webkit-scrollbar {
+  display: none;
+}
+
+#alltask::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
