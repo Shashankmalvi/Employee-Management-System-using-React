@@ -68,7 +68,7 @@ const App = () => {
   }
 
   return (
-  <div className="h-screen overflow-hidden">
+  <div className="h-screen overflow-auto">
     {!user && <Login handleLogin={handleLogin} />}
 
     {user === "admin" && (

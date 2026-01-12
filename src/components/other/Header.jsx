@@ -18,7 +18,7 @@ const Header = (props) => {
 
   
   return (
-    <div className='flex p-2 items-end justify-between'>
+    <div className='flex p-2 items-end justify-between sticky top-0'>
         <h1 className='text-2xl font-medium p-2'> <span className='text-3xl font-semibold'>E</span>mployee  <span className='text-3xl font-semibold'>C</span>orner</h1>
         <button onClick={logOutUser} className="px-5 py-2 text-sm font-medium rounded-lg
              bg-slate-900 text-rose-400

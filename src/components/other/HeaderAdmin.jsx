@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeaderAdmin = ({ handleLogout }) => {
   return (
-    <div className='p-2 flex items-end justify-between'>
+    <div className='p-2 flex items-end justify-between sticky top-0'>
       <h1 className='text-2xl font-medium p-2'>
         <span className='text-3xl font-semibold'>H</span>ello{' '}
         <span className='text-3xl font-semibold'>A</span>dmin 👋
